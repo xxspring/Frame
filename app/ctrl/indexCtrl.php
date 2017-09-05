@@ -2,6 +2,7 @@
 namespace app\ctrl;
 use \core\frame;
 use \core\lib\model;
+use \core\lib\conf;
 
 class indexCtrl extends frame {
 
@@ -9,8 +10,8 @@ class indexCtrl extends frame {
 
 
 		p('启动框架。');
-		$tempC = \core\lib\conf::get('CTRL','route');
-		$tempA = \core\lib\conf::get('ACTION','route');
+		$tempC = conf::get('CTRL','route');
+		$tempA = conf::get('ACTION','route');
 		p('Controller is:'.$tempC);
 		p('action is:'.$tempA);
 
